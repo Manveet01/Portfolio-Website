@@ -665,20 +665,24 @@ main { overflow-x: hidden; }
 \*-----------------------------------*/
 
 
-.qualification {
+.qualification { padding-block: var(--section-padding); }
+
+.qualification-content { margin-bottom: 50px; }
+/* 
+ .qualification {
   text-align: center;
-  margin-bottom: 40px; /* Adjust as needed */
-}
+   margin-bottom: 40px; 
+  }
 
 .qualification-content {
-  max-width: 800px; /* Adjust as needed */
+  max-width: 800px; 
   margin: 0 auto;
 }
 
 .qualification-subtitle {
   font-size: 20px;
   font-weight: bold;
-  color: #333; /* Adjust color as needed */
+  color: #333; 
 }
 
 .qualification-title {
@@ -686,14 +690,13 @@ main { overflow-x: hidden; }
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 5px;
-  color: #555; /* Adjust color as needed */
+  color: #555; 
 }
 
 .qualification-info {
   font-size: 16px;
-  color: #777; /* Adjust color as needed */
-}
-
+  color: #777; 
+}   */
 
 
 /*-----------------------------------*\
@@ -1049,7 +1052,7 @@ textarea.input-field {
  * responsive for larger than 992px screen
  */
 
-@media (min-width: 992px) {
+@media (min-width: 800px) {
 
   /**
    * CUSTOM PROPERTY
@@ -1067,7 +1070,7 @@ textarea.input-field {
      * spacing
      */
 
-    --section-padding: 50px;
+    --section-padding: 15px;
 
   }
 
@@ -1283,12 +1286,20 @@ textarea.input-field {
 
 
   /* 
-  - custom styles
+  - Qualification
 */
+
+
+.qualification {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  /* gap: 30px; */
+}
 
 /* Add styles for the "Qualification" section */
 
-.qualification-content {
+/* .qualification-content {
   margin-top: 4rem;
 }
 
@@ -1309,7 +1320,7 @@ textarea.input-field {
 
 .qualification-info {
   color: #666;
-}
+} */
 
 /* End of custom styles */
 
